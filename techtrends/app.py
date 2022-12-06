@@ -42,9 +42,7 @@ def get_post(post_id):
 
 # Define the Flask application
 app = Flask(__name__)
-# app.config['SECRET_KEY'] = 'your secret key'
-# app.config['SESSION_TYPE'] = 'filesystem'
-# Session(app)
+app.config['SECRET_KEY'] = 'your secret key'
 
 # Define the main route of the web application 
 @app.route('/')
